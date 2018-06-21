@@ -17,7 +17,7 @@ public class HUD_Manager : MonoBehaviour
     }
 
    
-  void UpdateScore(int amount)
+    public void UpdateScore(int amount)
     {
         score = score + amount;
         scoretext.text = "crystal count: " + score;
