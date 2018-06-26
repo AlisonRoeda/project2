@@ -7,7 +7,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
     [RequireComponent(typeof (ThirdPersonCharacter))]
     public class AICharacterControl : MonoBehaviour
     {
-        public UnityEngine.AI.NavMeshAgent agent { get; private set; }             // the navmesh agent required for the path finding
+        public UnityEngine.AI.NavMeshAgent agent { get; private set; }             
         public ThirdPersonCharacter character { get; private set; } // the character we are controlling
         public Transform target;                                    // target to aim for
         public Animator anim;
@@ -33,12 +33,12 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             if (agent.remainingDistance > agent.stoppingDistance)
             {
                 character.Move(agent.desiredVelocity, false, false);
-                anim.SetBool("Attaking", true);
+                anim.SetBool("Attacking", false);
             }
             else
             {
                 character.Move(Vector3.zero, false, false);
-                anim.SetBool("Attaking", true);
+                anim.SetBool("Attacking", true);
             }
         }
 
