@@ -63,11 +63,14 @@
     <Compile Include="Assets\DragonTerrorBringer\Scripts\CameraControl.cs" />
     <Compile Include="Assets\DragonTerrorBringer\Scripts\MaterialChange.cs" />
     <Compile Include="Assets\DragonTerrorBringer\Scripts\playerControl.cs" />
+    <Compile Include="Assets\HitEnemy.cs" />
     <Compile Include="Assets\hitplayer.cs" />
     <Compile Include="Assets\HUB_Manager.cs" />
     <Compile Include="Assets\HUD_Manager.cs" />
     <Compile Include="Assets\Knight\scripts\rotator.cs" />
     <Compile Include="Assets\Mixamo\Melee Axe Pack\Demo\CameraScroll.cs" />
+    <Compile Include="Assets\playerscript.cs" />
+    <Compile Include="Assets\threatstat.cs" />
     <None Include="Assets\Earthborn Troll\Shader\Alpha_Texture.shader" />
     <None Include="Assets\Earthborn Troll\Shader\DoubleSided-Light-Spec.shader" />
     <None Include="Assets\StoneKeep\Readme.txt" />

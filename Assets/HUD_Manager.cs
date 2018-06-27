@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HUD_Manager : MonoBehaviour
 {
@@ -32,6 +33,20 @@ public class HUD_Manager : MonoBehaviour
     {
         CurrentHealth = CurrentHealth + amount;
         healthbar.value = CurrentHealth;
-    }
-}
+        if(CurrentHealth<=0)
+        {
 
+            Death();
+
+        }
+
+
+    }
+
+
+    void Death()
+    {
+        SceneManager.LoadScene("level01");
+    }
+
+}
